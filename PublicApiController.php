@@ -68,8 +68,8 @@ class PublicApiController extends Controller
         ];
         return response()
             ->json($data, $code)
-            ->header('X-Powered-By', 'DHRU-FUSION')
-            ->header('dhru-fusion-api-version', $version)
+            ->header('X-Powered-By', 'GSM-THEME')
+            ->header('gsmtheme-fusion-api-version', $version)
             ->header('Content-Type', 'application/json; charset=utf-8')
             ->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
             ->header('Pragma', 'no-cache')
@@ -81,8 +81,8 @@ class PublicApiController extends Controller
         $data['apiversion'] = $version;
         return response()
             ->json($data, $code)
-            ->header('X-Powered-By', 'DHRU-FUSION')
-            ->header('dhru-fusion-api-version', $version)
+            ->header('X-Powered-By', 'GSM-THEME')
+            ->header('gsmtheme-fusion-api-version', $version)
             ->header('Content-Type', 'application/json; charset=utf-8')
             ->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
             ->header('Pragma', 'no-cache')
